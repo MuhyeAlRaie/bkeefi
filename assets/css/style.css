@@ -111,3 +111,139 @@ footer {
     font-size: 1rem;
     line-height: 1.6;
 }
+
+
+
+ /* Grid Layout */
+ .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  /* Italic Column Styling */
+  .italic-column {
+    transform: skew(-30deg);
+    transform-origin: left;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 1rem;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+    height: 500px; /* Set a fixed height for the scrolling effect */
+  }
+
+  .italic-column .content {
+    transform: skew(-30deg);
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+  }
+
+  /* Auto-Scrolling Animation */
+  .gallery_item {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    transform: skew(10deg); 
+  }
+
+  .gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: skew(5deg); /* Skew images to match column */
+  }
+
+  /* Scroll Up Animation */
+  .scroll-up {
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 10s linear infinite;
+  }
+
+  /* Scroll Down Animation */
+  .scroll-down {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: scrollDown 10s linear infinite;
+  }
+
+  /* Keyframes */
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  /* Duplicate Images for Infinite Loop */
+  .gallery_item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .italic-column {
+      transform: none;
+    }
+
+    .italic-column .content {
+      transform: none;
+    }
+
+    .gallery_item img {
+      transform: none;
+    }
+  }
+
+  .column1-scroll {
+    animation: scrollUp 3s linear infinite;
+  }
+  
+  .column2-scroll {
+    animation: scrollDown 3s linear infinite;
+  }
+  
+  .column3-scroll {
+    animation: scrollUp 3s linear infinite;
+  }
+  
+  .column4-scroll {
+    animation: scrollDown 3s linear infinite;
+  }
+
+  /* Overlay Container */
+.overlay-container {
+    position: relative;
+  }
+  
+  /* Section Styling */
+  .gallery-section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Overlay Styling */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 2; /* Above the section */
+    pointer-events: none; /* Makes the overlay non-interactive */
+  }
