@@ -21,6 +21,13 @@ body {
 
 }
 
+.hero-section p {
+    font-size: 24px;
+}
+.hero-section .btn {
+    background-color:white;
+}
+
 /* Navbar */
 .navbar-brand {
     font-weight: bold;
