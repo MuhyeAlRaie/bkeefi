@@ -17,6 +17,8 @@ body {
 .hero-section {
    
     height: 100vh;
+    font-family: 'Changa', sans-serif;
+
 }
 
 /* Navbar */
@@ -29,7 +31,7 @@ body {
 .nav-link {
     color: #333;
     margin: 0 10px;
-    font-family: 'kharabeesh_fontnormal', sans-serif;
+    font-family: 'Changa', sans-serif;
 }
 
 .nav-link:hover {
@@ -47,12 +49,19 @@ section h2 {
     font-family: 'kharabeesh_fontnormal', sans-serif;
 }
 
+section h5 {
+
+    font-family: 'Changa', sans-serif;
+}
+
 section p {
     font-size: 1.1rem;
+    font-family: 'Changa', sans-serif;
+
 }
 
 /* Footer */
 footer {
     background-color: #222;
-    font-family: 'kharabeesh_fontnormal', sans-serif;
+    font-family: 'Changa', sans-serif;
 }
