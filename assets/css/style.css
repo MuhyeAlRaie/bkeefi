@@ -11,6 +11,7 @@
 body {
     margin-top: 70px;
     font-family: 'kharabeesh_fontnormal', sans-serif;
+    background-color: black;
 }
 
 /* Hero Section */
@@ -27,6 +28,12 @@ body {
 .hero-section .btn {
     background-color:white;
 }
+.hero-section h1 {
+  font-size: 95px;
+}
+.hero-section h1 span {
+  color: #ff0000;
+}
 
 /* Navbar */
 .navbar-brand {
@@ -36,7 +43,7 @@ body {
 }
 
 .nav-link {
-    color: #333;
+    color: #fff;
     margin: 0 10px;
     font-family: 'Changa', sans-serif;
 }
@@ -54,6 +61,8 @@ section h2 {
     font-weight: bold;
     margin-bottom: 20px;
     font-family: 'kharabeesh_fontnormal', sans-serif;
+    color: #fff;
+    font-size: 95px;
 }
 
 section h5 {
@@ -64,194 +73,28 @@ section h5 {
 section p {
     font-size: 1.1rem;
     font-family: 'Changa', sans-serif;
+    color: #fff;
 
+}
+
+#about h2 span {
+  color: #ff0000;
+}
+#about p {
+  text-align: justify;
+}
+
+#features h2 {
+  color: #ff0000;
+}
+#features h5 {
+  color:#ff0000
 }
 
 /* Footer */
 footer {
     background-color: #222;
     font-family: 'Changa', sans-serif;
-}
-
-#about p {
-
-    text-align: justify;
-}
-
-/* Features Section */
-.feature-row {
-    display: flex;
-    flex-wrap: wrap;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-}
-
-.feature-img {
-    background-color: #22222200;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-}
-
-.feature-text {
-    text-align: left;
-    background-image: linear-gradient(rgba(2, 74, 102, 0.80), rgba(255, 0, 0, 0.8));
     
 }
 
-.feature-text h2 {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.feature-text p {
-    color: white;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-
- /* Grid Layout */
- .grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-  }
-
-  /* Italic Column Styling */
-  .italic-column {
-    transform: skew(-20deg);
-    transform-origin: left;
-    overflow: hidden;
-    background-color: #000000;
-    padding: 1rem;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; */
-    height: 400px; /* Set a fixed height for the scrolling effect */
-  }
-
-  .italic-column .content {
-    transform: skew(-20deg);
-    overflow: hidden;
-    position: relative;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  /* Auto-Scrolling Animation */
-  .gallery_item {
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    transform: skew(30deg); 
-     box-shadow: 0 4px 6px rgb(255, 0, 0);
-    border-radius: 8px;
-    
-  }
-
-  .gallery_item img {
-
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    transform: skew(20deg); /* Skew images to match column */
-    
-  }
-
-  /* Scroll Up Animation */
-  .scroll-up {
-    display: flex;
-    flex-direction: column;
-    animation: scrollUp 2s linear infinite;
-  }
-
-  /* Scroll Down Animation */
-  .scroll-down {
-    display: flex;
-    flex-direction: column-reverse;
-    animation: scrollDown 100s linear infinite;
-  }
-
-  /* Keyframes */
-  @keyframes scrollUp {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
-  }
-
-  @keyframes scrollDown {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
-  }
-
-  /* Duplicate Images for Infinite Loop */
-  .gallery_item:last-child {
-    margin-bottom: 0;
-  }
-
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .italic-column {
-      transform: none;
-    }
-
-    .italic-column .content {
-      transform: none;
-    }
-
-    .gallery_item img {
-      transform: none;
-    }
-  }
-
-  .column1-scroll {
-    animation: scrollUp 4s linear infinite;
-  }
-  
-  .column2-scroll {
-    animation: scrollDown 3s linear infinite;
-  }
-  
-  .column3-scroll {
-    animation: scrollUp 4s linear infinite;
-  }
-  
-  .column4-scroll {
-    animation: scrollDown 3s linear infinite;
-  }
-
-  /* Overlay Container */
-.overlay-container {
-    position: relative;
-  }
-  
-  /* Section Styling */
-  .gallery-section {
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Overlay Styling */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.106); /* Semi-transparent black */
-    z-index: 2; /* Above the section */
-    pointer-events: none; /* Makes the overlay non-interactive */
-  }
