@@ -118,21 +118,28 @@
     </div>
   </section>
 
-   <!-- App Video Section -->
-   <section id="app-video" class="py-5">
-    <div class="container text-center">
-      <div data-aos="fade-up">
-        <h2 class="fw-bold">Discover bkeefi <span>in Action</span></h2>
-        <p>Watch how Bkeefi transforms the sports experience through cutting-edge VR technology.</p>
-      </div>
-      <div class="mt-4" data-aos="zoom-in">
-        <video controls class="w-100 shadow rounded" style="max-width: 1200px;">
-          <source src="assets/video/BkeefiVideo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+<!-- App Video Section -->
+<section id="app-video" class="py-5">
+  <div class="container text-center">
+    <div data-aos="fade-up">
+      <h2 class="fw-bold">Discover bkeefi <span>in Action</span></h2>
+      <p>Watch how Bkeefi transforms the sports experience through cutting-edge VR technology.</p>
     </div>
-  </section>
+    <div class="mt-4 position-relative video-wrapper" data-aos="zoom-in">
+      <!-- Poster Cover -->
+      <div id="video-poster" class="poster-container">
+        <img src="assets/img/Hero-image.png" alt="Bkeefi Video Poster" class="poster-image">
+        <button id="play-button" class="btn  play-button">▶ Play</button>
+      </div>
+      <!-- Video -->
+      <video id="bkeefi-video" class="video-player" controls>
+        <source src="assets/video/BkeefiVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
 
     <!-- Features Section -->
 <section id="features" class="py-5" style="background-image: url('assets/img/feature-bg.png');">
@@ -285,7 +292,38 @@
 </section>
 
 
-
+<section class="saudi-vision-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Image -->
+      <div class="col-lg-6 saudi-vision-image mb-4 mb-lg-0">
+        <img src="assets/img/SaudiVision02.png" alt="Saudi Vision 2030" class="img-fluid rounded">
+      </div>
+      <!-- Right Content -->
+      <div class="col-lg-6 saudi-vision-content">
+        <h2>Aligning with <span>Saudi Vision 2030</span></h2>
+        <p>
+          bkeefi is pivotal in advancing the Kingdom’s economic diversification, 
+          technological innovation, and cultural transformation goals. Vision 2030 
+          emphasizes the diversification of the economy, enhancing global competitiveness, 
+          and positioning Saudi Arabia as a leader in entertainment and digital technology.
+        </p>
+        <p>
+          In line with this vision, the Kingdom has made significant investments in its 
+          entertainment and sports sectors, striving to deliver world-class experiences that 
+          engage its growing, technology-driven population.
+        </p>
+        <p>
+          bkeefi directly supports these objectives by introducing an innovative and 
+          immersive sports platform that integrates cutting-edge virtual reality with live 
+          event broadcasting. Offering fans a next-generation viewing experience, providing 
+          greater interactivity and immersion, and aligning with the Kingdom’s vision for a 
+          dynamic and engaging entertainment landscape.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
   
 
@@ -363,6 +401,26 @@
      },
    });
  </script>
+
+<script>
+  // JavaScript to handle the play functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const posterContainer = document.getElementById('video-poster');
+    const playButton = document.getElementById('play-button');
+    const video = document.getElementById('bkeefi-video');
+
+    // Hide the poster and play the video on poster click or play button click
+    posterContainer.addEventListener('click', () => {
+      posterContainer.style.display = 'none'; // Hide poster and button
+      video.play(); // Start playing video
+    });
+
+    // Ensure the poster hides when the video is manually played
+    video.addEventListener('play', () => {
+      posterContainer.style.display = 'none';
+    });
+  });
+</script>
 </body>
 
 </html>

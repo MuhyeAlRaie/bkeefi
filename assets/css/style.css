@@ -196,6 +196,62 @@ section p {
     color:#ff0000;
 }
 
+/* General Styling */
+.video-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Poster Container Styling */
+  .poster-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Poster Image Styling */
+  .poster-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Play Button Styling */
+  .play-button {
+    z-index: 3;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #ff0000;
+    border: #fff;
+  }
+  .play-button:hover {
+background-color: #fff;
+color: #ff0000;
+  }
+  
+  /* Video Player Styling */
+  .video-player {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
 #features {
     background-repeat: no-repeat;
 }
@@ -273,6 +329,33 @@ section p {
         width: 115px;
        
       }
+  }
+
+
+  .saudi-vision-section {
+    padding: 50px 20px;
+    background-color: #000000; /* Light gray background for contrast */
+  }
+  .saudi-vision-content h2 {
+    color: #fff; /* Custom blue for the title */
+    font-weight: bold;
+  }
+  .saudi-vision-content h2 span {
+
+    color:#ff0000;
+  }
+  .saudi-vision-content p {
+    line-height: 1.8;
+    color: #ffffff;
+    text-align: justify;
+  }
+  .saudi-vision-image img {
+    border-radius: 10px;
+  }
+  @media (max-width: 768px) {
+    .saudi-vision-image img {
+      max-width: 100%;
+    }
   }
 
 /* Footer */
