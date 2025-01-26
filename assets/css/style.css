@@ -399,6 +399,18 @@ color: #ff0000;
  }
 }
 
+/* strategic */
+
+#strategic h2 span {
+  color: #ff0000;
+}
+
+/* contact */
+
+#contact h2 span {
+  color: #ff0000;
+}
+
 /* Footer */
 footer {
     background-color: #fff;
