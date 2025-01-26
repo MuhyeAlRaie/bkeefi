@@ -159,7 +159,10 @@ section p {
         height: auto;
     }
   }
-
+#app-video video {
+    border: #ffffff 2px solid ;
+    
+}
 #app-video h2 span { 
     color:#ff0000;
 }
