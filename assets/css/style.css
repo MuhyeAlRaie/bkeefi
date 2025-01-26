@@ -228,6 +228,7 @@ section p {
     position: absolute;
     top: 0;
     left: 0;
+    border: #fff 3px solid;
   }
   
   /* Play Button Styling */
@@ -239,6 +240,7 @@ section p {
     border-radius: 0.5rem;
     background-color: #ff0000;
     border: #fff;
+    color: #fff;
   }
   .play-button:hover {
 background-color: #fff;
@@ -357,6 +359,45 @@ color: #ff0000;
       max-width: 100%;
     }
   }
+
+  
+.marketing-section-03  {
+  margin-top: 50px;
+  /* transform:skew(0deg, -8deg); */
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ padding: 0 0 0 0;
+ color: #000000;
+ background-color: #fff;
+ height: 500px;
+}
+
+.marketing-content-03 h2 span {
+
+ color: #000000;
+}
+.marketing-content-03 h2 {
+  color: #fff;
+ }
+ .marketing-section-03 img {
+     transform:skew(0deg, 8deg);
+
+ }
+.marketing-content-03 {
+ /* transform:skew(0deg, 8deg); */
+ /* background: rgba(0, 0, 0, 0.6); Semi-transparent background for text */
+ border-radius: 10px;
+ padding: 20px;
+}
+@media (max-width: 768px) {
+ .marketing-section-03 img {
+   max-width: 100%;
+ }
+ .marketing-section-03  {
+     height: auto;
+ }
+}
 
 /* Footer */
 footer {
