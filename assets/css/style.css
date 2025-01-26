@@ -131,6 +131,7 @@ section p {
     padding: 0 0 0 0;
     color: #000000;
     background-color: #fff;
+    height: 500px;
   }
 
   .marketing-content h2 span {
@@ -154,10 +155,13 @@ section p {
     .marketing-section img {
       max-width: 100%;
     }
+    .marketing-section  {
+        height: auto;
+    }
   }
 
 #app-video h2 span { 
-    color:#ff0000
+    color:#ff0000;
 }
 
 #features {
