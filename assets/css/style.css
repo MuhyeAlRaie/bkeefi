@@ -100,6 +100,9 @@ section p {
     color:#ff0000
 }
 
+#features {
+    background-repeat: no-repeat;
+}
 #features h2 {
   color: #ff0000;
 }
@@ -110,6 +113,7 @@ section p {
 #leagues h2 span {
     color: #ff0000;
 }
+
 .swiper {
     width: 100%;
     max-width: 1000px;
