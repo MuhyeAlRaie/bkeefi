@@ -96,6 +96,66 @@ section p {
   text-align: justify;
 }
 
+#vision {
+    background-color: #ffffff00;
+    border: solid 3px #ffffff ;
+    border-radius: 8px;
+    width: 595px;
+    height: 206px; 
+    text-align: center;
+    padding: 10px;
+    margin:5px;
+    align-self: center;
+    
+}
+
+@media (max-width:768px) {
+    #vision {
+        height: fit-content;
+        width: fit-content;
+    }
+}
+#vision h3 {
+    color: #ff0000;
+    font-size: 42px;
+}
+#vision p {
+    color: #ffffff;
+}
+
+.marketing-section  {
+     transform:skew(0deg, 8deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 0 0 0;
+    color: #000000;
+    background-color: #fff;
+  }
+
+  .marketing-content h2 span {
+
+    color: #000000;
+  }
+  .marketing-content h2 {
+     color: #fff;
+    }
+    .marketing-section img {
+        transform:skew(0deg, -8deg);
+
+    }
+  .marketing-content {
+    transform:skew(0deg, -8deg);
+    /* background: rgba(0, 0, 0, 0.6); Semi-transparent background for text */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    .marketing-section img {
+      max-width: 100%;
+    }
+  }
+
 #app-video h2 span { 
     color:#ff0000
 }
